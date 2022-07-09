@@ -42,9 +42,9 @@
           </article>
         </div>
 
-        <div class="container container--row container--large">
-          <div class="picture">
-            <img src="./images/image-computer.png" alt="a computer" class="picture__svg">
+        <div class="container container--row">
+          <div class="picture picture--half">
+            <img src="./images/image-computer.png" alt="a computer" class="picture__svg picture__svg--half">
           </div>
           <div class="container container--column container--small">
             <article class="article article--small article--left">
@@ -73,13 +73,14 @@
 
     <section class="section">
       <div class="container container--column container--large">
-        <article class="article article--medium article--center">
-          <h2 class="article__title article__title--medium">Access Clipboard anywhere</h2>
-          <p class="article__text article__text--medium">Whether you’re on the go, or at your computer, you can access
-            all your
-            Clipboard snippets in a few simple clicks.</p>
-        </article>
-
+        <div class="container container--medium">
+          <article class="article article--medium article--center">
+            <h2 class="article__title article__title--medium">Access Clipboard anywhere</h2>
+            <p class="article__text article__text--medium">Whether you’re on the go, or at your computer, you can access
+              all your
+              Clipboard snippets in a few simple clicks.</p>
+          </article>
+        </div>
         <div class="picture">
           <img src="./images/image-devices.png" alt="a phone and tablet" class="picture picture__svg">
         </div>
@@ -87,45 +88,55 @@
     </section>
 
     <section class="section">
-      <article class="article article--medium article--center">
-        <h2 class="article__title article__title--medium">Supercharge your workflow</h2>
-        <p class="article__text article__text--medium">We’ve got the tools to boost your productivity.</p>
-      </article>
+      <div class="container container--column">
+        <article class="article article--medium article--center">
+          <h2 class="article__title article__title--medium">Supercharge your workflow</h2>
+          <p class="article__text article__text--medium">We’ve got the tools to boost your productivity.</p>
+        </article>
 
 
-      <div class="container container--row">
-        <article class="article article--small article--center">
-          <div class="icon icon__small"><img class="icon__svg" src="./images/icon-blacklist.svg" alt=""></div>
-          <h3 class="article__title article__title--small">Create blacklists</h3>
-          <p class="article__text article__text--small">Ensure sensitive information never makes its way to your
-            clipboard by
-            excluding certain sources.</p>
-        </article>
-        <article class="article article--small article--center">
-          <div class="icon icon__small"><img class="icon__svg" src="./images/icon-text.svg" alt=""></div>
-          <h3 class="article__title article__title--small">Plain text snippets</h3>
-          <p class="article__text article__text--small">Remove unwanted formatting from copied text for a consistent
-            look.</p>
-        </article>
-        <article class="article article--small article--center">
-          <div class="icon icon__small"><img class="icon__svg" src="./images/icon-preview.svg" alt=""></div>
-          <h3 class="article__title article__title--small">Sneak preview</h3>
-          <p class="article__text article__text--small">Quick preview of all snippets on your Clipboard for easy access.
-          </p>
-        </article>
+        <div class="container container--row container--xlarge">
+          <div class="container container--column container--small">
+            <div class="icon icon__small"><img class="icon__svg" src="./images/icon-blacklist.svg" alt=""></div>
+            <article class="article article--small article--center">
+              <h3 class="article__title article__title--small">Create blacklists</h3>
+              <p class="article__text article__text--small">Ensure sensitive information never makes its way to your
+                clipboard by
+                excluding certain sources.</p>
+            </article>
+          </div>
+          <div class="container container--column container--small">
+            <div class="icon icon__small"><img class="icon__svg" src="./images/icon-text.svg" alt=""></div>
+            <article class="article article--small article--center">
+              <h3 class="article__title article__title--small">Plain text snippets</h3>
+              <p class="article__text article__text--small">Remove unwanted formatting from copied text for a consistent
+                look.</p>
+            </article>
+          </div>
+          <div class="container container--column container--small">
+            <div class="icon icon__small"><img class="icon__svg" src="./images/icon-preview.svg" alt=""></div>
+            <article class="article article--small article--center">
+              <h3 class="article__title article__title--small">Sneak preview</h3>
+              <p class="article__text article__text--small">Quick preview of all snippets on your Clipboard for easy
+                access.
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div>
-      <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-google.png" alt="Google's logo"></div>
-      <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-ibm.png" alt="IBM's logo"></div>
-      <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-microsoft.png" alt="Microsoft's logo">
+    <section class="section">
+      <div class="container container--row container--xlarge container--wrap">
+        <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-google.png" alt="Google's logo"></div>
+        <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-ibm.png" alt="IBM's logo"></div>
+        <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-microsoft.png" alt="Microsoft's logo">
+        </div>
+        <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-hp.png" alt="HP's logo"></div>
+        <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-vector-graphics.png"
+            alt="Vector Graphic's logo"></div>
       </div>
-      <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-hp.png" alt="HP's logo"></div>
-      <div class="icon icon__medium"><img class="icon__svg" src="./images/logo-vector-graphics.png"
-          alt="Vector Graphic's logo"></div>
-
-    </div>
+    </section>
 
     <section class="section">
       <div class="container container--column container--medium">
@@ -144,29 +155,33 @@
 
 
 
-  <!-- <footer>
-    <div><img src="./images/logo.svg" alt="Clipboard's icon"></div>
-    <div>
-      <h4>FAQs</h4>
-      <h4>Contact Us</h4>
-      <h4>Privacy Policy</h4>
-      <h4>Press Kit</h4>
-      <h4>Install Guide</h4>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo icon icon--medium"><img src="./images/logo.svg" alt="Clipboard's icon"
+          class="icon__svg icon__svg--medium"></div>
+      <h4 class="footer__link">FAQs</h4>
+      <h4 class="footer__link">Contact Us</h4>
+      <h4 class="footer__link">Privacy Policy</h4>
+      <h4 class="footer__link">Press Kit</h4>
+      <h4 class="footer__link">Install Guide</h4>
+
+      <div class="footer__social-container">
+        <div class="icon icon--small">
+          <div><img src="./images/icon-facebook.svg" alt="facebook" class="icon__svg icon__svg--small"></div>
+        </div>
+        <div class="icon icon--small">
+          <div><img src="./images/icon-twitter.svg" alt="twitter" class="icon__svg icon__svg--small"></div>
+        </div>
+        <div class="icon icon--small">
+          <div><img src="./images/icon-instagram.svg" alt="instagram" class="icon__svg icon__svg--small"></div>
+        </div>
+      </div>
     </div>
-    <div>
-      <div><img src="./images/icon-facebook.svg" alt="facebook"></div>
-    </div>
-    <div>
-      <div><img src="./images/icon-twitter.svg" alt="twitter"></div>
-    </div>
-    <div>
-      <div><img src="./images/icon-instagram.svg" alt="instagram"></div>
-    </div>
-    <p>
+    <p class="footer__attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Sahand Masoleh</a>.
     </p>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
