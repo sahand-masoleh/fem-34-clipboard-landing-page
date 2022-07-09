@@ -10,5 +10,20 @@
 body {
   min-height: 100vh;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 1fr auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.section {
+  outline: 1px solid lime;
+}
+
+.container {
+  outline: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
