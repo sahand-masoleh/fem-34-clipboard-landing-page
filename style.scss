@@ -1,3 +1,4 @@
+@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
 //###primary
@@ -26,6 +27,9 @@ body {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr);
 	grid-template-rows: 1fr auto;
+
+	background: top / contain no-repeat;
+	background-image: url(./images/bg-header-desktop.png);
 }
 
 .main {
@@ -148,8 +152,12 @@ body {
 }
 
 .icon {
+	display: grid;
+	place-content: center;
+
 	&--small {
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	&--medium {
@@ -158,6 +166,38 @@ body {
 
 	&__svg {
 		width: 100%;
+		height: 100%;
+	}
+}
+
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.button {
+	flex-grow: 1;
+	font-size: 1.2rem;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	padding: 1ch 3ch;
+	border-bottom: 0.25rem solid #00000020;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&--cyan {
+		background-color: $c-p-strong-cyan;
+		box-shadow: 0 0.25rem 1rem 0 color.adjust($c-p-strong-cyan, $alpha: -0.5);
+	}
+
+	&--blue {
+		background-color: $c-p-light-blue;
+		box-shadow: 0 0.25rem 1rem 0 color.adjust($c-p-light-blue, $alpha: -0.5);
 	}
 }
 
@@ -189,6 +229,11 @@ body {
 	&__link {
 		font-size: 1.2rem;
 		color: $c-s-grayish-blue;
+		cursor: pointer;
+
+		&:hover {
+			color: $c-p-strong-cyan;
+		}
 	}
 
 	&__social-container {
@@ -199,6 +244,24 @@ body {
 		grid-column: second-to-last / last;
 		align-items: center;
 		justify-content: flex-end;
+	}
+
+	&__icon {
+		position: relative;
+		cursor: pointer;
+		background-color: white;
+		mix-blend-mode: overlay;
+
+		&:hover::after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $c-p-strong-cyan;
+			mix-blend-mode: lighten;
+		}
 	}
 
 	&__attribution {
