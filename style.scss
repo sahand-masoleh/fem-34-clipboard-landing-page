@@ -30,6 +30,10 @@ body {
 
 	background: top / contain no-repeat;
 	background-image: url(./images/bg-header-desktop.png);
+
+	@media screen and (max-width: 481px) {
+		background-image: url(./images//bg-header-mobile.png);
+	}
 }
 
 .main {
@@ -55,6 +59,11 @@ body {
 	&--row {
 		gap: 1rem;
 		justify-content: space-between;
+
+		@media screen and (max-width: 481px) {
+			flex-direction: column;
+			gap: 3rem;
+		}
 	}
 
 	&--column {
@@ -96,6 +105,10 @@ body {
 
 	&--left {
 		text-align: left;
+
+		@media screen and (max-width: 481px) {
+			text-align: center;
+		}
 	}
 
 	&__title {
@@ -108,10 +121,18 @@ body {
 
 		&--medium {
 			font-size: 2.2rem;
+
+			@media screen and (max-width: 481px) {
+				font-size: 1.8rem;
+			}
 		}
 
 		&--large {
 			font-size: 3rem;
+
+			@media screen and (max-width: 481px) {
+				font-size: 2rem;
+			}
 		}
 	}
 
@@ -121,14 +142,17 @@ body {
 
 		&--small {
 			font-size: 1rem;
+			line-height: 3ch;
 		}
 
 		&--medium {
 			font-size: 1.2rem;
+			line-height: 3ch;
 		}
 
 		&--large {
 			font-size: 1.3rem;
+			line-height: 2ch;
 		}
 	}
 }
@@ -139,14 +163,21 @@ body {
 
 	&--half {
 		max-width: 50%;
-		flex-grow: 1;
 		display: flex;
 		justify-content: flex-end;
+
+		@media screen and (max-width: 481px) {
+			max-width: unset;
+		}
 	}
 
 	&__svg {
 		&--half {
 			height: 100%;
+			@media screen and (max-width: 481px) {
+				height: auto;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -219,6 +250,12 @@ body {
 			[second-to-last] auto [last];
 		grid-template-rows: 1fr 1fr;
 		grid-auto-flow: column;
+
+		@media screen and (max-width: 481px) {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
 	}
 
 	&__logo {
